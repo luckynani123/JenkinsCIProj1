@@ -17,7 +17,7 @@ pipeline{
 }
         stage('build docker image'){
         steps{
-        sh 'docker build -t webImage .'
+        sh 'docker build -t webimage .'
         }
         }
 	
