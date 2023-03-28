@@ -14,7 +14,13 @@ pipeline{
 	steps{
 	sh 'mvn clean install'
 	}
-	}
+
+
+        stage('build docker image'){
+        steps{
+        sh 'docker build -t webImage .'
+        }
+        }
 	
-	}
+	
 }
